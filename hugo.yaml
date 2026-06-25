@@ -1,10 +1,11 @@
 baseURL: "https://endlia.github.io/"
 languageCode: "zh-cn"
-title: "Endlia"
+title: "自動的人文地理"
 theme: "minimal-bw"
 enableRobotsTXT: true
 hasCJKLanguage: true
 timeZone: "Asia/Shanghai"
+relativeURLs: true
 
 pagination:
   pagerSize: 10
@@ -17,7 +18,8 @@ markup:
       unsafe: true
 
 params:
-  description: "一个黑白极简的个人博客。"
+  description: "自動的人文地理"
+  intro: "你還記得那條街嗎，我們再不去它就會被移走"
   author: "Endlia"
   footer: "Endlia"
 
