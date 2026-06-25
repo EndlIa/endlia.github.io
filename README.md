@@ -1,10 +1,15 @@
-# 测试TESTtest
- 测试TESTtest
+# Endlia
 
-## 测试TESTtest
-测试TESTtest
+Personal blog powered by Hugo and GitHub Pages.
 
-## 测试TESTtest
+## Local preview
 
-## 测试TESTtest
-测试TESTtest
+```bash
+hugo server -D
+```
+
+## Build
+
+```bash
+hugo --gc --minify --cacheDir /tmp/hugo_cache
+```

@@ -1,0 +1,26 @@
+baseURL: "https://endlia.github.io/"
+languageCode: "zh-cn"
+title: "Endlia"
+theme: "minimal-bw"
+enableRobotsTXT: true
+hasCJKLanguage: true
+timeZone: "Asia/Shanghai"
+
+pagination:
+  pagerSize: 10
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  description: "一个黑白极简的个人博客。"
+  author: "Endlia"
+  footer: "Endlia"
+
+caches:
+  images:
+    dir: :cacheDir/images

@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <section class="intro">
+    <h1>{{ site.Title }}</h1>
+    <p>{{ site.Params.description }}</p>
+  </section>
+
+  <section class="post-list" aria-label="Latest posts">
+    {{ $pages := where site.RegularPages "Section" "posts" }}
+    {{ if $pages }}
+      {{ range $pages }}
+        <article class="post-item">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          {{ with .Summary }}<p>{{ . | plainify }}</p>{{ end }}
+        </article>
+      {{ end }}
+    {{ else }}
+      <p class="muted">还没有文章。</p>
+    {{ end }}
+  </section>
+{{ end }}

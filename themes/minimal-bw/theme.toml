@@ -1,0 +1,12 @@
+name = "Minimal BW"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A minimal black and white Hugo theme for personal writing."
+homepage = "https://endlia.github.io/"
+tags = ["blog", "minimal", "black-white"]
+features = ["responsive", "dark-mode"]
+min_version = "0.123.0"
+
+[author]
+  name = "Endlia"
+  homepage = "https://endlia.github.io/"
