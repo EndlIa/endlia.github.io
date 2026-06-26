@@ -1,5 +1,6 @@
 {{ define "main" }}
   <article class="post">
+    <a class="back-link" href="{{ site.Home.RelPermalink }}">Back</a>
     <header class="post-header">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
       <h1>{{ .Title }}</h1>
